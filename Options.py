@@ -4,7 +4,10 @@ import colorsys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.QtWebEngineWidgets import *
+try:
+    from PyQt5.QtWebEngineWidgets import *
+except:
+    from PyQt5.QtWidgets import *
 from PyQt5.QtPrintSupport import *
 from robin_stocks import robinhood as rh
 import os
