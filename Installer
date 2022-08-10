@@ -1,11 +1,22 @@
-#!/bin/bash
+#!/bin/
 
 sudo pip uninstall PyQt5
 sudo pip uninstall PyQtWebEngine
 
-sudo apt-get autoclean
 sudo apt-get autoremove
+
+sudo apt clean
+sudo apt-get autoclean
+
+df -h
+
+sudo apt update
 sudo apt-get update
+
 sudo apt-get upgrade
+sudo apt full-upgrade
+
 sudo apt-get remove qt5-default pyqt5-dev pyqt5-dev-tools
 sudo apt-get install qt5-default pyqt5-dev pyqt5-dev-tools
+
+sudo reboot
